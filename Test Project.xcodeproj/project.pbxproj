@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8B4175BF2E68A6D500BDC20C /* SFSymbols7PublicPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 8B4175BE2E68A6D500BDC20C /* SFSymbols7PublicPackage */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		8B4175A32E689F2900BDC20C /* Test Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B4175BF2E68A6D500BDC20C /* SFSymbols7PublicPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = "Test Project";
 			packageProductDependencies = (
+				8B4175BE2E68A6D500BDC20C /* SFSymbols7PublicPackage */,
 			);
 			productName = "Test Project";
 			productReference = 8B4175A32E689F2900BDC20C /* Test Project.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 8B41759A2E689F2900BDC20C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8B4175BD2E68A6D500BDC20C /* XCRemoteSwiftPackageReference "SFSymbols7PublicPackage" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8B4175A42E689F2900BDC20C /* Products */;
 			projectDirPath = "";
@@ -324,6 +333,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8B4175BD2E68A6D500BDC20C /* XCRemoteSwiftPackageReference "SFSymbols7PublicPackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alphabounce/SFSymbols7PublicPackage";
+			requirement = {
+				branch = SFECE;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8B4175BE2E68A6D500BDC20C /* SFSymbols7PublicPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8B4175BD2E68A6D500BDC20C /* XCRemoteSwiftPackageReference "SFSymbols7PublicPackage" */;
+			productName = SFSymbols7PublicPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8B41759B2E689F2900BDC20C /* Project object */;
 }

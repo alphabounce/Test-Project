@@ -1,0 +1,15 @@
+{
+  "originHash" : "86bb9e37408cd0282279aaa5ead72a2fa87e031d4c4b3e6b1a6d128121e68b39",
+  "pins" : [
+    {
+      "identity" : "sfsymbols7publicpackage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/alphabounce/SFSymbols7PublicPackage",
+      "state" : {
+        "branch" : "SFECE",
+        "revision" : "dffb90675fde7e2008b3ac61196a6628977ffaf9"
+      }
+    }
+  ],
+  "version" : 3
+}

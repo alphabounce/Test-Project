@@ -6,16 +6,30 @@
 //
 
 import SwiftUI
+import SFSymbols7PublicPackage
 
 struct ContentView: View {
+    @State private var symbol = "globe"
+    @State private var changeImage = false
+    @State private var loader = SymbolLoader()
     var body: some View {
         VStack {
-            Image(systemName: "globe")
+            Image(systemName: symbol)
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+                .onTapGesture {
+                    changeImage.toggle()
+                }
         }
         .padding()
+        .sheet(
+            isPresented: $changeImage) {
+                SymbolView(
+                    loader: loader,
+                    selectedSymbol: $symbol
+                )
+            }
+        
     }
 }
 
